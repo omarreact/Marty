@@ -1,0 +1,748 @@
+:root {
+  --primary-font: "Radley";
+  --text-font: Arial;
+  --primary-color: #171d2f;
+  --white: #ffffff;
+  --section-pading: 175px 0;
+}
+
+body {
+  font-family: var(--primary-font) !important;
+}
+.banner_left {
+  background-image: url(./img/marty-waite-accueil-title-bg-v3.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1080px;
+  color: var(--white);
+}
+.banner_left h2 {
+  font-weight: 400;
+  font-size: 115px;
+  line-height: 125px;
+}
+.banner_left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+}
+.banner_left-content {
+  padding-left: 75px;
+}
+.banner_left-content img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.banner_right {
+  background-color: var(--primary-color);
+}
+.banner_right-content {
+  padding-left: 30px;
+}
+.banner_right-content img {
+  width: 60%;
+}
+.banner_right-content h3 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 60px;
+}
+.link-group {
+  padding-bottom: 60px;
+}
+.popup-btn {
+  background-color: var(--white);
+  padding: 30px 40px;
+  transition: 0.3s ease padding-right;
+}
+.popup-btn:hover .popup-btn_link {
+  text-decoration: none;
+  color: #000;
+  padding-right: 30px;
+}
+.popup-btn_link {
+  color: #000;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-right: 20px;
+  transition: 0.3s ease padding-right;
+  position: relative;
+}
+.popup-btn_link::after {
+  content: "\3e";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  bottom: -15px;
+  right: -2px;
+  color: #000;
+}
+
+/* experince css */
+.expinfo {
+  padding: 150px 50px;
+}
+.expinfo_content {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 50px 30px;
+}
+.expinfo_content::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 80px 40px;
+  border-color: transparent transparent var(--primary-color);
+  position: absolute;
+  right: 15px;
+  top: -40px;
+}
+.expinfo_content .title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.expinfo_content .heading {
+  font-size: 60px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+.expinfo_content .content {
+  font-size: 20px;
+}
+.expinfo_peragraph p {
+  font-size: 20px;
+}
+.expinfo_peragraph .popup-btn {
+  padding: 30px 0px;
+}
+
+/* Team Section CSS */
+
+#team {
+  background-image: url(./img/marty-waite-pourchoi-choisir-bg-v2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--section-pading);
+}
+
+.team_box {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 2px solid #868686;
+  border-right: 2px solid #868686;
+  border-radius: 10px;
+  max-width: 1100px;
+  margin-left: 50px;
+  padding: 75px;
+}
+
+.title {
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.heading {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.team_box-content ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.team_box-content ul li {
+  padding: 5px 0;
+}
+.team_box-content ul li img {
+  padding-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+/* review section CSS */
+
+#review {
+  width: 90% !important;
+  background: var(--white);
+  margin: -45px auto 0px auto;
+  padding: 60px;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0/16%);
+}
+#review .footer-3 {
+  padding: 40px 0px;
+  display: inline-flex;
+  width: 100%;
+}
+#review .footer-3 span {
+  width: 50%;
+}
+#review .container {
+  max-width: 100% !important;
+}
+#review .link-group {
+  padding-bottom: 0px;
+}
+.review_content {
+  padding: 0 20px;
+}
+#c_review {
+  padding: 100px 0px 250px 0px;
+  background-color: var(--primary-color);
+  margin: 150px 60px 0px 60px;
+}
+#c_review .container {
+  max-width: 90%;
+}
+.c_review_carosal {
+  color: var(--white);
+}
+.c_review_content .author {
+  font-family: var(--primary-font) !important;
+  font-size: 24px;
+  text-align: right;
+}
+.c_review_content .source {
+  font-family: var(--text-font);
+  font-size: 14px;
+  color: #868686;
+  text-align: right;
+}
+
+/* massage section CSS */
+#message {
+  width: 70% !important;
+  background: var(--white);
+  margin-left: 180px;
+  margin-top: -100px;
+  padding: 60px;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0/16%);
+  position: relative;
+}
+#message::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 80px 40px;
+  border-color: transparent transparent var(--white);
+  position: absolute;
+  right: 0px;
+  top: -40px;
+}
+#message p {
+  font-family: var(--text-font);
+  font-size: 18px;
+}
+input {
+  margin-bottom: 10px !important;
+  padding: 5px;
+  border: 1px solid #cccccc !important;
+  background-color: transparent !important;
+}
+.form-control {
+  border-radius: 0 !important;
+}
+textarea {
+  border: 1px solid #cccccc !important;
+  background-color: transparent !important;
+  margin-bottom: 20px !important;
+}
+.contact_form input {
+  border: 1px solid #000000 !important;
+  background-color: transparent !important;
+}
+.contact_form textarea {
+  border: 1px solid #000000 !important;
+  color: #000000 !important;
+}
+/* textarea:focus,
+input:focus {
+  outline: none !important;
+  color: #000000 !important;
+}
+.contact_form textarea,
+.contact_form input ::placeholder {
+  opacity: 0.3 !important;
+}
+#contact .form-control,
+#contact textarea.form-control {
+  color: var(--white);
+}
+#contact .form-control::placeholder {
+  color: var(--white);
+  opacity: 0.5 !important;
+}
+::placeholder {
+  opacity: 0.3;
+} */
+#contact textarea.form-control {
+  color: var(--white) !important;
+}
+
+#contact .form-control {
+  color: var(--white);
+}
+#fname {
+  width: 47%;
+}
+#lname {
+  width: 47%;
+  margin-left: 22px;
+}
+#email {
+  width: 100%;
+}
+input.btn {
+  padding: 10px 20px 40px 20px;
+  color: var(--white);
+  background-color: var(--primary-color) !important;
+  font-family: var(--text-font);
+  font-size: 20px;
+  width: 50%;
+}
+input.btn:hover {
+  background-color: transparent !important;
+  color: #000000;
+}
+
+/* sele_count section CSS */
+#sele_count {
+  margin-top: 200px;
+  background-image: url(./img/marty-waite-compter-sur-nous-bg-v5-scaled.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--section-pading);
+}
+#sele_count .container {
+  max-width: 85%;
+}
+.sele_count_right .heading {
+  color: var(--white);
+}
+.sele_count_left {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 2px solid #d1d1d1;
+  border-right: 2px solid #d1d1d1;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 120px 50px;
+}
+#contact {
+  background-image: url(./img/marty-waite-service-premiere-classe-bg-v2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: var(--section-pading);
+}
+#contact .container {
+  max-width: 90% !important;
+}
+
+.contact_title-head {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 70px;
+  width: 80%;
+  position: relative;
+}
+.contact_title-head::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 80px 40px;
+  border-color: transparent transparent var(--primary-color);
+  position: absolute;
+  right: 0px;
+  top: -40px;
+}
+
+.contact_form {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.2);
+  border-top: 2px solid #d1d1d1;
+  border-right: 2px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 50px;
+  width: 85%;
+}
+
+.contact_form input {
+  border: 1px solid #000000;
+}
+.contact_form textarea {
+  border: 1px solid #000000;
+}
+
+/* Footer section CSS  */
+
+#footer {
+  padding: 100px 0px 0px 0px;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+#footer .container {
+  max-width: 95% !important;
+}
+hr {
+  background-color: #868686;
+}
+.footer-1,
+.footer-2 {
+  padding-right: 30%;
+}
+.footer-1 h3,
+.footer-2 h3 {
+  font-size: 34px;
+}
+.footer-1 ul,
+.footer-2 ul,
+.properties_lists_item ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-1 ul li,
+.properties_lists_item ul li {
+  padding: 10px 0;
+}
+.footer-2 ul li {
+  color: var(--white);
+  padding-bottom: 10px;
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 300;
+}
+.footer-1 ul li a,
+.properties_lists_item ul li a {
+  color: var(--white);
+  text-decoration: none;
+  padding-left: 20px;
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 300;
+}
+.properties_lists_item ul li a {
+  color: #000000;
+  cursor: auto;
+}
+.footer-3 {
+  background-color: var(--white);
+  padding: 10%;
+}
+.footer-3 h2 {
+  font-family: var(--primary-font);
+  color: #000000;
+  font-size: 50px;
+  line-height: 55px;
+}
+.footer-3 a,
+.properties_single a {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+  padding: 0 30px 0 0;
+  border-width: 0;
+  border-color: #000;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  position: relative;
+  transition: 0.3s ease padding-right;
+}
+.footer-3 a::after,
+.properties_single a::after {
+  content: "\3e";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -14px;
+  right: -2px;
+  color: #000;
+}
+.footer-3 a:hover,
+.properties_single a:hover {
+  color: #000;
+  border-color: #000;
+  background-color: transparent;
+  padding-right: 35px;
+  text-decoration: none;
+}
+.footer-3-img img {
+  width: 50%;
+  float: left;
+  padding: 50px 20px;
+}
+.social_icon a {
+  color: var(--white);
+  font-size: 25px;
+  margin-right: 15px;
+}
+#menu-footer li {
+  display: inline;
+  list-style: none;
+}
+#menu-footer li a {
+  color: var(--white);
+  font-family: var(--text-font);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.38px;
+  padding: 0 24px;
+  text-decoration: none;
+}
+#menu-footer li a:hover {
+  text-decoration: none;
+}
+#menu-footer li a span {
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease border;
+}
+#menu-footer li a:hover span {
+  border-bottom: 1px solid #868686;
+}
+.copyright {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.copyright span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-family: var(--text-font);
+}
+#properties {
+  margin: var(--section-pading);
+  padding: var(--section-pading);
+  position: relative;
+}
+#properties .container::before {
+  content: "";
+  background: #171d2f;
+  display: block;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+#properties .container::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 80px 40px;
+  border-color: transparent transparent #171d2f;
+  position: absolute;
+  left: 40px;
+  top: -40px;
+}
+#properties .container {
+  max-width: 93% !important;
+  margin-bottom: 60px;
+}
+.properties_header {
+  margin-left: 230px;
+  margin-bottom: 35px;
+}
+
+.properties_lists_img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 3px 25px 0 rgb(0 0 0/10%);
+}
+.properties_price {
+  font-family: var(--text-font);
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  position: absolute;
+  left: 0;
+  margin-right: 25px;
+  bottom: 40px;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.list_items {
+  box-shadow: 0 3px 25px 0 rgb(0 0 0/10%);
+  background-color: var(--white);
+  padding: 80px 50px !important;
+}
+.properties_lists_items p {
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 300;
+}
+.tag span {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-family: var(--text-font);
+  font-size: 13px;
+  font-weight: 300;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+/* Responsive CSS  */
+@media only screen and (max-width: 500px) {
+  .banner_left {
+    height: 500px;
+  }
+  .banner_left-content {
+    padding-left: 30px;
+    z-index: 9;
+  }
+  .banner_left h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .banner_left-content p {
+    line-height: 60px;
+  }
+  .img-fluid {
+    width: 55%;
+    z-index: -9;
+  }
+  .banner_right-content {
+    padding: 50px 20px;
+  }
+  .banner_right-content h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .expinfo_content .title {
+    font-size: 16px;
+  }
+  .expinfo_content .heading {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  #team {
+    padding: 30px 0px;
+  }
+  .team_box {
+    margin: 20px;
+    padding: 40px 30px;
+  }
+  .team_box-content ul li img {
+    height: 40px;
+    width: 40px;
+  }
+  #review {
+    margin: 0px auto;
+  }
+  #review img {
+    width: 100%;
+  }
+  #c_review {
+    margin: 50px 30px 0px 30px;
+    padding: 50px 0px 140px 0px;
+  }
+  #message {
+    width: 80% !important;
+    margin: -80px auto 0px auto;
+    padding: 20px;
+  }
+  .carousel-indicators {
+    bottom: -40px !important;
+  }
+  #sele_count {
+    margin-top: 100px;
+    padding: 30px;
+  }
+  #sele_count .container {
+    max-width: inherit;
+  }
+  .sele_count_right .heading {
+    line-height: 35px;
+    padding: 20px 0px;
+  }
+  .sele_count_left {
+    padding: 40px;
+  }
+  .sele_count_left h2 {
+    text-align: center;
+    line-height: 35px;
+  }
+  #contact {
+    padding: 30px;
+  }
+  #contact .container {
+    max-width: 100% !important;
+  }
+  .contact_title-head {
+    padding: 50px 30px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .contact_title-head h2 {
+    line-height: 35px;
+  }
+  .contact_form {
+    width: 100%;
+  }
+  #properties {
+    margin: 40px 0px;
+    padding: 0px;
+  }
+  #properties .container::after {
+    display: none;
+  }
+  #properties .container::before {
+    width: 25px;
+  }
+  .properties_header {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  #properties .container {
+    max-width: 85% !important;
+    margin-bottom: 0px;
+  }
+  .properties_lists .list_items {
+    display: none !important;
+  }
+  .properties_lists .col-md-3 {
+    padding-left: 0px;
+    padding-top: 40px;
+  }
+  .footer_bottom_img {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  #review .footer-3 {
+    display: grid;
+  }
+  #review .footer-3 span {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .link-group {
+    margin-bottom: 100px;
+    padding-bottom: 0px !important;
+  }
+  .expinfo_peragraph .footer-3 {
+    padding: 0px;
+  }
+}
